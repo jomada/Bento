@@ -235,7 +235,7 @@ const CONFIG = {
 				},
 				{
 					name: 'Repos',
-					link: 'https://github.com/migueravila',
+					link: 'https://github.com/jomada',
 				},
 			],
 		},
