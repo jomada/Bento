@@ -10,19 +10,11 @@ const CONFIG = {
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
-<<<<<<< HEAD
-  // General
-  name: 'Jorge',
-  imageBackground: false,
-  openInNewTab: true,
-  twelveHourFormat: false,
-=======
 	// General
 	name: 'Jorge',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
->>>>>>> origin/master
 
 	// Greetings
 	greetingMorning: 'Buen día!',
@@ -30,7 +22,6 @@ const CONFIG = {
 	greetingEvening: 'Buenas noches,',
 	greetingNight: 'Ve a dormir!',
 
-<<<<<<< HEAD
   // Layout
   bentoLayout: 'lists', // 'bento', 'lists', 'buttons'
 
@@ -56,7 +47,6 @@ const CONFIG = {
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '-34.741235',
 	defaultLongitude: '-58.296412',
->>>>>>> origin/master
 
 	// Autochange
 	autoChangeTheme: true,
