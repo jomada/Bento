@@ -1,15 +1,5 @@
 ![image](assets/img/header.png)
 
-<p style="margin: -20px 0 30px">
-  <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
-  </a>
-
-  <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a>
-</p>
-
 <br />
 
 ## 👇 Index
@@ -18,15 +8,17 @@
 - [🚀 Usage](#-usage)
   - [🏡 As Home Page](#-as-home-page)
   - [➕ As New Tab](#-as-new-tab)
+  - [🐳 In a Docker Container](#-in-a-docker-container)
+    - [Docker run](#docker-run)
+    - [docker-compose](#docker-compose)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
-  - [🏷️ Buttons & Links](#️-buttons--links)
-  - [📑 Lists & Links](#-lists--links)
+  - [🏷️ Buttons \& Links](#️-buttons--links)
+  - [📑 Lists \& Links](#-lists--links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
-
 
 ## ✨ Features
 
@@ -36,7 +28,7 @@
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
 - **Variables** for custom colors and font sizes in the `app.css` code.
-- **Icons** all icons are from [Lucide icons](https://lucide.dev).
+- All **icons** are from [Lucide icons](https://lucide.dev).
 - **Modular** javascript files for an easy read.
 
 ## 🚀 Usage
@@ -54,8 +46,22 @@
 
 You can use different Add-ons/Extensions for it
 
-- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
+- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's preferences page.
 - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+### 🐳 In a Docker Container
+
+You can run Bento in a Docker Container, either with `docker run`, or with the included `docker-compose` file.
+
+#### Docker run
+ 1. Clone this repo to pull the `config.js` file: `git clone https://github.com/migueravila/Bento/`
+ 2. Run the following `docker` command, providing the path to the `config.js` file, changing port mappings if needed.
+ 3. `# docker run -it -d -p 80:80 -v <config.js location>:/usr/share/nginx/html/config.js lewisdoesstuff/bento`
+
+#### docker-compose
+  1. Clone this repo with `git clone https://github.com/migueravila/Bento/`
+  2. Edit port mappings, and provide a path to the `config.js` file in `docker-compose.yml`
+  3. `cd` into the cloned repo, then run `# docker-compose -d up` to start. 
 
 ## 🎨 Customization
 
@@ -85,7 +91,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 ### 📐 Layouts: Bento, Lists and Buttons.
 
-Bento has three different layouts `bento`, `lists` & `buttons`. It allows you to cutomize your experience giving you more buttons or lists depending on how are you more comfortable. To modify the laout you need to change the following line in the `config.js` file:
+Bento has three different layouts `bento`, `lists` & `buttons`. It allows you to customise your experience giving you more buttons or lists depending on how are you more comfortable. To modify the laout you need to change the following line in the `config.js` file:
 
 ```js
   // Layout
@@ -254,7 +260,7 @@ that you can change in the `config.js` file:
   // Autochange
   autoChangeTheme: true,
 
-  // Autochabge by OS
+  // Autochange by OS
   changeThemeByOS: false, 
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)
