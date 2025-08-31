@@ -11,42 +11,29 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'Jorge',
+	name: 'John',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Buen día!',
-	greetingAfternoon: 'Buenas tardes,',
-	greetingEvening: 'Buenas noches,',
-	greetingNight: 'Ve a dormir!',
+	greetingMorning: 'Good morning!',
+	greetingAfternoon: 'Good afternoon,',
+	greetingEvening: 'Good evening,',
+	greetingNight: 'Go to Sleep!',
 
-  // Layout
-  bentoLayout: 'lists', // 'bento', 'lists', 'buttons'
-
-  // Weather
-  weatherKey: '2a77d4b7a5d734de0906fe4ba3dd7bf9', // Write here your API Key
-  weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
-  weatherUnit: 'C', // 'F', 'C'
-  language: 'en', // More languages in https://openweathermap.org/current#multi
-
-  trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-  defaultLatitude: '-34.720495',
-  defaultLongitude: '-58.277104',
-=======
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: '2a77d4b7a5d734de0906fe4ba3dd7bf9', // Write here your API Key
+	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
-	language: 'es', // More languages in https://openweathermap.org/current#multi
+	language: 'en', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '-34.741235',
-	defaultLongitude: '-58.296412',
+	defaultLatitude: '37.775',
+	defaultLongitude: '-122.419',
 
 	// Autochange
 	autoChangeTheme: true,
@@ -235,7 +222,7 @@ const CONFIG = {
 				},
 				{
 					name: 'Repos',
-					link: 'https://github.com/jomada',
+					link: 'https://github.com/migueravila',
 				},
 			],
 		},
